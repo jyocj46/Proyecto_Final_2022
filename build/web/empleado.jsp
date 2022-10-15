@@ -174,7 +174,6 @@
                 <% Empleado empleado = new Empleado();
                     DefaultTableModel tabla = new DefaultTableModel();
                     tabla = empleado.leer();
-                    String gen;
                     for (int t= 0; t<tabla.getRowCount(); t++) {
                            
                             out.println("<tr data-id="+ tabla.getValueAt(t, 0)+" data-id_p=" + tabla.getValueAt(t, 11)+">");
